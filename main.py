@@ -1,4 +1,4 @@
-import os
+import os, json
 from Game import Game
 
 # clear screen
@@ -13,13 +13,14 @@ while True:
 	state = g.get_state()
 
 	# Print stuff
-	print "Time - " + state["time"]
-	print ""
-	print state["message"]
-	print ""
-	for i in range(len(state["actions"])):
-		print str(i) + ". " + state["actions"][i]
-	print ""
+	# print "Time - " + state["time"]
+	# print ""
+	# print state["message"]
+	# print ""
+	# for i in range(len(state["actions"])):
+	# 	print str(i) + ". " + state["actions"][i]
+	# print ""
+	print json.dumps(state, indent=4)
 	last_input = raw_input(":")
 
 	# Wait and clear the screen

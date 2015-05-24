@@ -1,8 +1,7 @@
 {
-	"actions": {
-		"wait": {
-			"events": ["sound", "sound-fade", "sound-closer", "sound-close", "sound-away"],
-			"message": "You wait for a little while."
-		}
+	"wait": {
+		"name": "wait",
+		"text": "Wait.",
+		"message": "You wait for a little while."
 	}
 }

@@ -1,24 +1,28 @@
 {
-	"events": {
-		"sound": {
-			"message": "The sound of a sharp object getting dragged along the floor can be heard in the distance.",
-			"next_events": ["sound-fade", "sound-closer"]
-		},
-		"sound-fade": {
-			"message": "The sound has faded away.",
-			"next_events": []
-		},
-		"sound-closer": {
-			"message": "The sound is moving closer towards you.",
-			"next_events": ["sound-close"]
-		},
-		"sound-close": {
-			"message": "The sound continues to move closer, then suddenly stops.",
-			"next_events": ["sound-away"]
-		},
-		"sound-away": {
-			"message": "The sound is moving away from you.",
-			"next_events": ["sound-fade"]
-		}
+	"sound": {
+		"message": "The sound of a sharp object getting dragged along the floor can be heard in the distance.",
+		"next_events": ["sound-fade", "sound-closer"],
+		"actions": ["wait"],
+		"chance": 0.5
+	},
+	"sound-fade": {
+		"message": "The sound has faded away.",
+		"next_events": [],
+		"actions": ["wait"]
+	},
+	"sound-closer": {
+		"message": "The sound is moving closer towards you.",
+		"next_events": ["sound-close"],
+		"actions": ["wait"]
+	},
+	"sound-close": {
+		"message": "The sound continues to move closer, then suddenly stops.",
+		"next_events": ["sound-away"],
+		"actions": ["wait"]
+	},
+	"sound-away": {
+		"message": "The sound is moving away from you.",
+		"next_events": ["sound-fade"],
+		"actions": ["wait"]
 	}
 }
