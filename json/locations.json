@@ -1,0 +1,30 @@
+{
+	"beginning": {
+		"message": "You wake up in a dark room. It's cold and you can't see anything.",
+		"actions": [
+			{"wait": "Wait."}
+		]
+	},
+	"wait": {
+		"message": "You wait for a while. A small noise can be heard in the distance.",
+		"actions": [
+			{"wait-closer-noise": "Wait."}
+		]
+	},
+	"wait-closer-noise": {
+		"message": "You wait"
+	},
+	"wait-close-noise": {
+		"des"
+	}
+}
+
+{
+	"locations": {
+		"room": {
+			"events": [
+				["sound"],["sound"],["sound"],[""],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]
+			]
+		}
+	}
+}
