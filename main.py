@@ -13,14 +13,13 @@ while True:
 	state = g.get_state()
 
 	# Print stuff
-	# print "Time - " + state["time"]
-	# print ""
-	# print state["message"]
-	# print ""
-	# for i in range(len(state["actions"])):
-	# 	print str(i) + ". " + state["actions"][i]
-	# print ""
 	print json.dumps(state, indent=4)
+	for event in state["events"]["new_events"]:
+		print event
+	print ""
+	for i in range(len(state["actions"])):
+		print str(i) + " - " + state["actions"][i]["text"]
+	print ""
 	last_input = raw_input(":")
 
 	# Wait and clear the screen
